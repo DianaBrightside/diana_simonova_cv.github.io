@@ -1,4 +1,5 @@
-import { Button, Grid, Toolbar, Typography } from "@mui/material";
+import { Grid, Toolbar, Typography } from "@mui/material";
+import HeaderLinks from "./HeaderLinks";
 
 const Header = () => {
   return (
@@ -28,9 +29,7 @@ const Header = () => {
           sm={12}
           md={6}
         >
-          <Button>Portfolio</Button>
-          <Button>Contacts</Button>
-          <Button>About</Button>
+          <HeaderLinks />
         </Grid>
       </Grid>
     </Toolbar>

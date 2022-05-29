@@ -8,7 +8,7 @@ export const theme = createTheme({
         MuiTypography: {
             styleOverrides: {
                 root: {
-                    fontFamily: 'sans-serif',
+                    fontFamily: 'Roboto',
                     color: '#373037'
                 }
             }
@@ -23,7 +23,7 @@ export const theme = createTheme({
         MuiPaper: {
             styleOverrides: {
                 root: {
-                    backgroundColor: "#EEEFF1",
+                    backgroundColor: "#fff",
                     fontFamily: "sans-serif"
                 }
             }
@@ -35,6 +35,15 @@ export const theme = createTheme({
                     fontFamily: "sans-serif"
                 }
             }
-        }
+        },
+        MuiLink: {
+            styleOverrides: {
+                root: {
+                    fontWeight: 'bold',
+                    color: '#373037',
+                    textDecorationColor: '#808080'
+                }
+            }
+        },
     }
 })

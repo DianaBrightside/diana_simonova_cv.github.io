@@ -1,12 +1,18 @@
 import { styled } from "@mui/material/styles";
-import { Grid, Link, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
+
 import Technologies from "./Technologies";
+import Contacts from "./Contacts";
+
+import SchoolIcon from "@mui/icons-material/School";
+import LightbulbIcon from "@mui/icons-material/Lightbulb";
 
 const AboutMeText = styled(Typography)(() => ({
   display: "flex",
   fontSize: "1.17em",
   textAlign: "justify",
   lineHeight: "1.4em",
+  alignItems: "center",
 }));
 
 const PersonalInfo = () => {
@@ -14,11 +20,11 @@ const PersonalInfo = () => {
     <Grid
       container
       spacing={2}
-      sx={{ justifyContent: "center", alignItems: "center" }}
+      sx={{ justifyContent: "space-around", alignItems: "center" }}
     >
       <Grid item xs={10} sm={7} md={5} lg={4}>
         <img
-          src={require("../Images/personalPhoto.jpg")}
+          src={require("../Images/personalPhoto.png")}
           alt="Diana Simonova"
           width="100%"
         />
@@ -36,14 +42,17 @@ const PersonalInfo = () => {
       <Grid item xs={12} md={6}>
         <Typography variant="h5">My journey</Typography>
         <AboutMeText variant="p">
-          I am Master of Applied and Computer Linguistics of National Technical
-          University "Kharkiv Polytechnical Institute" from 2017 to 2022
+          <SchoolIcon />I am Master of Applied and Computer Linguistics of
+          National Technical University "Kharkiv Polytechnical Institute" from
+          2017 to 2022
         </AboutMeText>
         <AboutMeText variant="p">
-          Attended Frontend Course from october 15th 2019 to december 28th 2019
+          <LightbulbIcon /> Attended Frontend Course from october 15th 2019 to
+          december 28th 2019
         </AboutMeText>
         <AboutMeText variant="p">
-          Attended JavaScript Course from january 9th 2020 to march 6th 2020
+          <LightbulbIcon /> Attended JavaScript Course from january 9th 2020 to
+          march 6th 2020
         </AboutMeText>
       </Grid>
       <Grid item xs={12} md={5}>
@@ -51,25 +60,7 @@ const PersonalInfo = () => {
       </Grid>
       <Grid item xs={12} sx={{ textAlign: "center" }}>
         <Typography variant="h5">My contacts</Typography>
-        <Grid
-          item
-          sx={{ display: "flex", justifyContent: "space-evenly", padding: 2 }}
-        >
-          <Link
-            target="_blank"
-            href="https://www.linkedin.com/in/diana-simonova-395030177/"
-            underline="always"
-          >
-            My LinkedIn
-          </Link>
-          <Link
-            target="_blank"
-            href="mailto:dianabrightside@gmail.com"
-            underline="always"
-          >
-            dianabrightside@gmail.com
-          </Link>
-        </Grid>
+        <Contacts />
       </Grid>
     </Grid>
   );
