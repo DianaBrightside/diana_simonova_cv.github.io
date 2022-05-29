@@ -15,7 +15,12 @@ const ContentWrapper = () => {
         }}
       >
         <Paper
-          sx={{ overflow: "scroll", height: "95vh", width: "70vw" }}
+          sx={{
+            overflow: "scroll",
+            height: "95vh",
+            width: "65vw",
+            padding: "0 15px",
+          }}
           elevation={8}
         >
           <Header />

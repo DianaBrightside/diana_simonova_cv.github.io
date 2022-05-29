@@ -1,7 +1,6 @@
-import { Button, Grid, Toolbar, Typography, useTheme } from "@mui/material";
+import { Button, Grid, Toolbar, Typography } from "@mui/material";
 
 const Header = () => {
-  const { breakpoints } = useTheme();
   return (
     <Toolbar>
       <Grid

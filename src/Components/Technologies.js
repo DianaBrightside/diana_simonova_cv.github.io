@@ -19,7 +19,7 @@ const Technologies = () => {
       sx={{
         display: "flex",
         flexWrap: "wrap",
-        justifyContent: "space-between",
+        justifyContent: "space-around",
       }}
     >
       {technologies.map((technology, index) => {
