@@ -7,6 +7,7 @@ const Technologies = () => {
     "jquery",
     "react",
     "React UI tools",
+    "firebase",
     "html5",
     "css3",
     "adaptive/responsive markup",
