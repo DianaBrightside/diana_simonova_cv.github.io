@@ -3,11 +3,13 @@ import { Paper } from "@mui/material";
 
 const MyTechnology = styled(Paper)(() => ({
   padding: "10px 12px",
-  margin: "5px",
+  margin: "3px",
   backgroundColor: "#373037",
   borderRadius: "10px",
   color: "#EEEFF1",
-  fontWeight: "bold",
+  fontSize: "0.7em",
+  textTransform: "uppercase",
+  textAlign: "center",
 }));
 
 const Technology = ({ technology, index }) => {

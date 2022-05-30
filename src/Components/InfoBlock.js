@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+
 import PersonalInfo from "./PersonalInfo";
 import Portfolio from "./Portfolio";
 

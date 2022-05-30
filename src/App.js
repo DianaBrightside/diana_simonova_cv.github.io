@@ -1,8 +1,8 @@
 import { ThemeProvider } from "@mui/material";
 import ContentWrapper from "./Components/ContentWrapper";
-import "./Style/style.css";
-
 import { theme } from "./Style/theme";
+
+import "./Style/style.css";
 
 const App = () => {
   return (

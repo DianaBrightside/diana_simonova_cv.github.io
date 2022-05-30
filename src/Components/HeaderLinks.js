@@ -17,8 +17,8 @@ const HeaderLink = styled(Link)(() => ({
 const HeaderLinks = () => {
   return (
     <>
-      <HeaderLink to="/portfolio">Portfolio</HeaderLink>
       <HeaderLink to="/">About</HeaderLink>
+      <HeaderLink to="/portfolio">Portfolio</HeaderLink>
     </>
   );
 };

@@ -1,19 +1,36 @@
 import { styled } from "@mui/material/styles";
-import { Grid, Typography } from "@mui/material";
-
-import Technologies from "./Technologies";
-import Contacts from "./Contacts";
+import { Box, Grid, Typography } from "@mui/material";
 
 import SchoolIcon from "@mui/icons-material/School";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 
+import Technologies from "./Technologies";
+import Contacts from "./Contacts";
+
 const AboutMeText = styled(Typography)(() => ({
   display: "flex",
-  fontSize: "1.17em",
+  fontSize: "1.0em",
   textAlign: "justify",
   lineHeight: "1.4em",
-  alignItems: "center",
 }));
+
+const AboutMeYearText = styled(Typography)(() => ({
+  fontSize: "0.9em",
+  paddingLeft: 32,
+  fontWeight: "bold",
+}));
+
+const AboutMeBox = styled(Box)(() => ({
+  paddingBottom: 16,
+}));
+
+const sharedIconPadding = {
+  paddingRight: 8,
+};
+
+const BulbIcon = styled(LightbulbIcon)(() => sharedIconPadding);
+
+const UniversityIcon = styled(SchoolIcon)(() => sharedIconPadding);
 
 const PersonalInfo = () => {
   return (
@@ -30,7 +47,9 @@ const PersonalInfo = () => {
         />
       </Grid>
       <Grid item xs={12} md={5}>
-        <Typography variant="h4">About me</Typography>
+        <Typography sx={{ paddingBottom: 2 }} variant="h4">
+          About me
+        </Typography>
         <AboutMeText variant="p">
           Hi! My name is Diana Simonova. I am from Ukraine, Kharkiv. Looking for
           my first challange in Israel! I am a self-taught developer, a person
@@ -39,27 +58,47 @@ const PersonalInfo = () => {
           knowledge. Ready to gain as much practice as possible.
         </AboutMeText>
       </Grid>
-      <Grid item xs={12} md={6}>
-        <Typography variant="h5">My journey</Typography>
-        <AboutMeText variant="p">
-          <SchoolIcon />I am Master of Applied and Computer Linguistics of
-          National Technical University "Kharkiv Polytechnical Institute" from
-          2017 to 2022
-        </AboutMeText>
-        <AboutMeText variant="p">
-          <LightbulbIcon /> Attended Frontend Course from october 15th 2019 to
-          december 28th 2019
-        </AboutMeText>
-        <AboutMeText variant="p">
-          <LightbulbIcon /> Attended JavaScript Course from january 9th 2020 to
-          march 6th 2020
-        </AboutMeText>
+      <Grid item xs={12} md={5}>
+        <AboutMeBox>
+          <Typography sx={{ paddingBottom: 2 }} variant="h5">
+            My journey
+          </Typography>
+          <AboutMeText variant="p">
+            <UniversityIcon />
+            Master of Applied and Computer Linguistics of National Technical
+            University "Kharkiv Polytechnical Institute"
+          </AboutMeText>
+          <AboutMeYearText variant="p">2017 - 2022</AboutMeYearText>
+        </AboutMeBox>
+        <AboutMeBox>
+          <AboutMeText variant="p">
+            <BulbIcon />
+            React Front-End Developer Intern
+          </AboutMeText>
+          <AboutMeYearText variant="p">
+            2021 August - 2022 February
+          </AboutMeYearText>
+        </AboutMeBox>
+        <AboutMeBox>
+          <AboutMeText variant="p">
+            <BulbIcon />
+            Front-end Course - Limon School
+          </AboutMeText>
+          <AboutMeYearText variant="p">2019 - 2020</AboutMeYearText>
+        </AboutMeBox>
+        <AboutMeBox>
+          <AboutMeText variant="p">
+            <BulbIcon />
+            JavaScript Course - Limon School
+          </AboutMeText>
+          <AboutMeYearText variant="p">2020 - 2021</AboutMeYearText>
+        </AboutMeBox>
       </Grid>
       <Grid item xs={12} md={5}>
         <Technologies />
       </Grid>
       <Grid item xs={12} sx={{ textAlign: "center" }}>
-        <Typography variant="h5">My contacts</Typography>
+        <Typography variant="h5">Contacts</Typography>
         <Contacts />
       </Grid>
     </Grid>

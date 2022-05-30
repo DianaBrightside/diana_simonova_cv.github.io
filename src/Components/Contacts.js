@@ -20,14 +20,16 @@ const Contacts = () => {
         href="https://www.linkedin.com/in/diana-simonova-395030177/"
         underline="always"
       >
-        <LinkedInIcon /> My LinkedIn
+        <LinkedInIcon />
+        LinkedIn
       </ContactLink>
       <ContactLink
         target="_blank"
         href="mailto:dianabrightside@gmail.com"
         underline="always"
       >
-        <AlternateEmailIcon /> dianabrightside@gmail.com
+        <AlternateEmailIcon />
+        dianabrightside@gmail.com
       </ContactLink>
     </Grid>
   );
