@@ -1,4 +1,5 @@
 import { Grid, Toolbar, Typography } from "@mui/material";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 import HeaderLinks from "./HeaderLinks";
 
@@ -12,11 +13,12 @@ const Header = () => {
             textAlign: "center",
           },
           justifyContent: "space-between",
+          alignItems: "center",
         }}
       >
-        <Grid item xs={12} sm={12} md={4}>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Diana Simonova
+        <Grid item xs={12} sm={12} md={5}>
+          <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+            🖤 Diana Simonova
           </Typography>
         </Grid>
         <Grid
