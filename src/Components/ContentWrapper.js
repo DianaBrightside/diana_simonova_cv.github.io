@@ -1,5 +1,5 @@
 import { Box, Paper, ThemeProvider } from "@mui/material";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import { theme } from "../Style/theme";
 
@@ -9,7 +9,7 @@ import InfoBlock from "./InfoBlock";
 const ContentWrapper = () => {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <HashRouter>
         <Box
           sx={{
             display: "flex",
@@ -31,7 +31,7 @@ const ContentWrapper = () => {
             <InfoBlock />
           </Paper>
         </Box>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 };
