@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ContactLink = styled(Link)(() => ({
   display: "flex",
@@ -11,10 +12,7 @@ const ContactLink = styled(Link)(() => ({
 
 const Contacts = () => {
   return (
-    <Grid
-      item
-      sx={{ display: "flex", justifyContent: "space-evenly", padding: 2 }}
-    >
+    <Grid container sx={{ display: "flex", justifyContent: "space-evenly" }}>
       <ContactLink
         target="_blank"
         href="https://www.linkedin.com/in/diana-simonova-395030177/"
@@ -30,6 +28,14 @@ const Contacts = () => {
       >
         <AlternateEmailIcon />
         dianabrightside@gmail.com
+      </ContactLink>
+      <ContactLink
+        target="_blank"
+        href="https://github.com/DianaBrightside"
+        underline="always"
+      >
+        <GitHubIcon />
+        GitHub
       </ContactLink>
     </Grid>
   );

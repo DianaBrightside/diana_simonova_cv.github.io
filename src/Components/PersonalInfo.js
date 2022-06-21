@@ -3,6 +3,7 @@ import { Box, Grid, Typography } from "@mui/material";
 
 import SchoolIcon from "@mui/icons-material/School";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
+import ComputerIcon from "@mui/icons-material/Computer";
 
 import Technologies from "./Technologies";
 import Contacts from "./Contacts";
@@ -32,6 +33,8 @@ const BulbIcon = styled(LightbulbIcon)(() => sharedIconPadding);
 
 const UniversityIcon = styled(SchoolIcon)(() => sharedIconPadding);
 
+const WorkIcon = styled(ComputerIcon)(() => sharedIconPadding);
+
 const PersonalInfo = () => {
   return (
     <Grid
@@ -48,21 +51,49 @@ const PersonalInfo = () => {
       </Grid>
       <Grid item xs={12} md={5}>
         <Typography sx={{ paddingBottom: 2 }} variant="h4">
-          About me
+          React/Front-End Developer
         </Typography>
         <AboutMeText variant="p">
-          Hi! My name is Diana Simonova. I am from Ukraine, Kharkiv. Looking for
-          my first challange in Israel! I am a self-taught developer, a person
-          who is attentive to details, perfectionist in a good way, full of
-          energy and curiosity. Always struggling for new experience and
-          knowledge. Ready to gain as much practice as possible.
+          Hi! My name is Diana Simonova. Located in Israel.
+        </AboutMeText>
+        <AboutMeText variant="p">
+          I am React/Front-end developer. Experienced in building single-page
+          applications.
+        </AboutMeText>
+        <AboutMeText variant="p">
+          Looking for the first challange in Israel!
         </AboutMeText>
       </Grid>
       <Grid item xs={12} md={5}>
+        <Typography sx={{ paddingBottom: 2 }} variant="h5">
+          My journey
+        </Typography>
         <AboutMeBox>
-          <Typography sx={{ paddingBottom: 2 }} variant="h5">
-            My journey
-          </Typography>
+          <AboutMeText variant="p">
+            <WorkIcon />
+            React Track Mentor – SheCodes;
+          </AboutMeText>
+          <AboutMeYearText variant="p">2022 May - Current Time</AboutMeYearText>
+        </AboutMeBox>
+        <AboutMeBox>
+          <AboutMeText variant="p">
+            <WorkIcon />
+            Junior React Front-End Developer – Codempire
+          </AboutMeText>
+          <AboutMeYearText variant="p">
+            2021 August - 2022 February
+          </AboutMeYearText>
+        </AboutMeBox>
+        <AboutMeBox>
+          <AboutMeText variant="p">
+            <WorkIcon />
+            React Front-End Developer Intern – Codempire
+          </AboutMeText>
+          <AboutMeYearText variant="p">
+            2021 February - 2021 August
+          </AboutMeYearText>
+        </AboutMeBox>
+        <AboutMeBox>
           <AboutMeText variant="p">
             <UniversityIcon />
             Master of Applied and Computer Linguistics of National Technical
@@ -73,25 +104,16 @@ const PersonalInfo = () => {
         <AboutMeBox>
           <AboutMeText variant="p">
             <BulbIcon />
-            React Front-End Developer Intern
-          </AboutMeText>
-          <AboutMeYearText variant="p">
-            2021 August - 2022 February
-          </AboutMeYearText>
-        </AboutMeBox>
-        <AboutMeBox>
-          <AboutMeText variant="p">
-            <BulbIcon />
-            Front-end Course - Limon School
-          </AboutMeText>
-          <AboutMeYearText variant="p">2019 - 2020</AboutMeYearText>
-        </AboutMeBox>
-        <AboutMeBox>
-          <AboutMeText variant="p">
-            <BulbIcon />
-            JavaScript Course - Limon School
+            JavaScript Course - Lemon School
           </AboutMeText>
           <AboutMeYearText variant="p">2020 - 2021</AboutMeYearText>
+        </AboutMeBox>
+        <AboutMeBox>
+          <AboutMeText variant="p">
+            <BulbIcon />
+            Front-end Course - Lemon School
+          </AboutMeText>
+          <AboutMeYearText variant="p">2019 - 2020</AboutMeYearText>
         </AboutMeBox>
       </Grid>
       <Grid item xs={12} md={5}>

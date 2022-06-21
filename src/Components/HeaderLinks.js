@@ -2,8 +2,9 @@ import { styled } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 
 const HeaderLink = styled(Link)(() => ({
+  display: "inline-block",
   padding: " 7px 14px",
-  margin: 2,
+  margin: 3,
   fontWeight: "bold",
   color: "#373037",
   textDecoration: "none",
