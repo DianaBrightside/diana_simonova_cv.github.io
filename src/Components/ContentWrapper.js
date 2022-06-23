@@ -22,8 +22,12 @@ const ContentWrapper = () => {
             sx={{
               overflow: "scroll",
               height: "95vh",
-              width: "65vw",
-              padding: "0 15px",
+              width: "75vw",
+              [theme.breakpoints.down("sm")]: {
+                width: "100vw",
+                height: "100vh",
+              },
+              padding: "15px",
             }}
             elevation={8}
           >
